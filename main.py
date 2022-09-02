@@ -7,9 +7,11 @@ import asyncio
 def make_app():
     return tornado.web.Application([
         (r"/images/medals-client/osuhow-(.*)", custom_medal_handler),
+        (r"/medals/client/osuhow-(.*)", custom_medal_handler),
         (r"/images/medals-client/(.*)", normal_medal_handler),
         (r"/medals/web/(.*)", medals_web_handler),
         (r"/medals/client/(.*)", medals_client_handler)
+    
     ])
 
 class normal_medal_handler(tornado.web.RequestHandler):
