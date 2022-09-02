@@ -1,4 +1,4 @@
 # bunny
-##A proxy for medals on osu!
+A proxy for medals on osu!
 
-##good luck getting this working lol
+good luck getting this working lol
